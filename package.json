@@ -1,29 +1,29 @@
 {
   "name": "lib-test-template",
   "version": "1.0.0",
-  "description": "Ejemplo de libreria de componentes con react y css",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJs --outDir dist/cjs"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
-  "author": "AMF ",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.1.2",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.0.4"
-  },
-  "peerDependencies": {
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.10",
+    "@storybook/addon-interactions": "^7.0.10",
+    "@storybook/addon-links": "^7.0.10",
+    "@storybook/blocks": "^7.0.10",
+    "@storybook/react": "^7.0.10",
+    "@storybook/react-webpack5": "^7.0.10",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.10"
   }
 }
